@@ -1,5 +1,5 @@
 ## Run Analysis on the UCI HAR Dataset
-run_analysis <- function()
+run_analysis <- function() {
 
         ## Check to see if one of the files from the dataset is in the working directory
         if(!file.exists("./features.txt")) return("Data Set Does Not Exist")
@@ -63,3 +63,4 @@ write.table(HAR_Summarized, file = "./TidyTable.txt", row.names = FALSE)
 
 ## Return the name of the text file
 return("The file is in the working directory with the name TidyTable.txt")
+}
